@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 h2 {
@@ -214,6 +214,10 @@ i {
     cursor: pointer;
     box-shadow: 2px 2px 8px 2px rgb(110, 110, 110);
 }
+
+/* MAIN SECTION-FIVE */
+
+
 
 
 /* FOOTER */
