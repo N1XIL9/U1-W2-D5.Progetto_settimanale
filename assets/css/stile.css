@@ -2,7 +2,17 @@
 html,
 body {
     height: 100%;
-    line-height: 1.5;
+    line-height: 1.8;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.5rem;
 }
 
 #container {
@@ -17,6 +27,7 @@ header {
     align-items: center;
     border: 1px solid gray;
     padding: 10px;
+    box-shadow: #d3d3d3;
 }
 
 nav li {
@@ -45,24 +56,25 @@ a {
     background-image: url(/assets/images/banner.jpg);
     background-position: center;
     background-size: cover;
-    height: 51vh;
+    height: 53vh;
     color: white;
 }
 
 #section-one div {
     border: none;
-    margin-left: 26%;
-    margin-right: 26%;
-    padding-top: 12vh;
+    margin-left: 25%;
+    margin-right: 20%;
+    padding-top: 100px;
 }
 
 #section-one h1 {
-    font-size: 70px;
+    font-weight: 400;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
 #section-one p {
-    font-size: 25px;
-    margin-top: 3vh;
+    font-size: 20px;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
 /* BUTTON */
@@ -74,7 +86,7 @@ a {
     background: rgb(102, 179, 216);
     background: linear-gradient(90deg, rgba(102, 179, 216, 1) 0%, rgba(60, 53, 128, 1) 100%);
     color: white;
-    box-shadow: 2px 2px 8px 2px black;
+
 }
 
 
@@ -99,6 +111,10 @@ a {
     transition: 0.5s;
 }
 
+.get-info-button:hover {
+    box-shadow: 2px 2px 8px 2px black;
+}
+
 .get-info-button:hover span {
     padding-right: 25px;
 }
@@ -110,14 +126,56 @@ a {
 
 /* MAIN SECTION-TWO */
 
+#section-two {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
+#section-two div {
+    margin-top: 30px;
+}
 
+#section-two h2 {
+    font-size: 40px;
+}
 
+#section-two p {
+    font-weight: 200;
+    font-size: 18px;
+    margin-top: 40px;
+}
 
+/* MAIN SECTION-THREE */
 
+#section-three {
+    display: flex;
+    justify-content: center;
+}
 
+#section-three div {
+    text-align: center;
+    width: 300px;
+    margin: 30px;
+}
 
+#section-three h2 {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 15px;
 
+}
+
+#section-three p {
+    text-align: justify;
+    font-weight: 200;
+}
+
+i {
+    font-size: 40px;
+    color: #e42424
+}
 
 /* FOOTER */
 
