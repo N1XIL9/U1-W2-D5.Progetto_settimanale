@@ -181,8 +181,40 @@ i {
 
 #section-four {
     background-color: #0c0633;
-
+    height: 40vh;
+    color: white;
+    text-align: center;
 }
+
+#section-four div {
+    padding-top: 80px;
+}
+
+#section-four h2 {
+    font-size: 40px;
+}
+
+#section-four p {
+    font-size: 15px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 10px;
+}
+
+.write-us-button {
+    font-size: 20px;
+    padding: 10px 25px;
+    border: none;
+    background: rgb(102, 179, 216);
+    background: linear-gradient(90deg, rgba(102, 179, 216, 1) 0%, rgba(60, 53, 128, 1) 100%);
+    color: white;
+}
+
+.write-us-button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 8px 2px rgb(110, 110, 110);
+}
+
 
 /* FOOTER */
 
