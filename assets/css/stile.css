@@ -1,8 +1,123 @@
 /* IMPOSTAZIONI GENERALI */
+html,
+body {
+    height: 100%;
+    line-height: 1.5;
+}
 
-/* HEADER */
+#container {
+    height: 100%;
+}
 
-/* MAIN */
+/* HEADER- NAV */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sign-up-button {
+    padding: 10px 15px;
+    color: white;
+    background: rgb(102, 179, 216);
+    background: linear-gradient(90deg, rgba(102, 179, 216, 1) 0%, rgba(60, 53, 128, 1) 100%);
+    border: none;
+}
+
+/* MAIN - SECTION-ONE*/
+
+#section-one {
+    background-image: url(/assets/images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 51vh;
+    color: white;
+}
+
+#section-one div {
+    border: none;
+    margin-left: 26%;
+    margin-right: 26%;
+    padding-top: 12vh;
+}
+
+#section-one h1 {
+    font-size: 70px;
+}
+
+#section-one p {
+    font-size: 25px;
+    margin-top: 3vh;
+}
+
+/* BUTTON */
+
+#section-one button {
+    font-size: 25px;
+    margin-top: 1.5vh;
+    border: none;
+    background: rgb(102, 179, 216);
+    background: linear-gradient(90deg, rgba(102, 179, 216, 1) 0%, rgba(60, 53, 128, 1) 100%);
+    color: white;
+    box-shadow: 2px 2px 8px 2px black;
+}
+
+
+/* BUTTON ANIMATION  */
+.get-info-button {
+    padding: 15px 20px;
+}
+
+.get-info-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.get-info-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.get-info-button:hover span {
+    padding-right: 25px;
+}
+
+.get-info-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* MAIN SECTION-TWO */
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 
