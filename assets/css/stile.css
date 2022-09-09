@@ -179,24 +179,29 @@ i {
 
 #section-four {
     background-color: #0c0633;
-    height: 40vh;
+    height: 300px;
     color: white;
     text-align: center;
+    margin: 0 auto;
+}
+
+#section-four {
+    margin: 0 auto;
 }
 
 #section-four div {
-    padding-top: 80px;
+    padding: 40px;
 }
 
 #section-four h2 {
-    font-size: 40px;
+    font-size: 45px;
 }
 
 #section-four p {
-    font-size: 15px;
+    font-size: 17px;
     margin-left: 35%;
     margin-right: 35%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .write-us-button {
@@ -236,5 +241,54 @@ i {
 
 /* FOOTER */
 
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    margin-top: 40px;
+    height: 100px;
+}
+
+footer div {
+    margin: 50px 0px 0px 50px;
+    width: 290px;
+    height: 200px;
+}
+
+footer h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+fieldset input {
+    width: 280px;
+    height: 35px;
+    border: none;
+}
+
+footer button {
+    width: 285px;
+    height: 45px;
+    border: none;
+    background: rgb(102, 179, 216);
+    background: linear-gradient(90deg, rgba(102, 179, 216, 1) 0%, rgba(60, 53, 128, 1) 100%);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#copywrite {
+    padding-top: 120px;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    height: 100px;
+
+}
 
 /* RESPONSIVE */
