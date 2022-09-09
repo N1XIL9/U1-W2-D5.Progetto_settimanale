@@ -18,6 +18,11 @@ h2 {
     height: 100%;
 }
 
+i {
+    font-size: 40px;
+    color: #e42424
+}
+
 /* HEADER- NAV */
 
 header {
@@ -170,10 +175,6 @@ a {
     font-weight: 200;
 }
 
-i {
-    font-size: 40px;
-    color: #e42424
-}
 
 /* MAIN SECTION-FOUR */
 

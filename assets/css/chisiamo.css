@@ -18,6 +18,11 @@ h2 {
     height: 100%;
 }
 
+i {
+    font-size: 40px;
+    color: #e42424
+}
+
 /* HEADER- NAV */
 
 header {
@@ -25,7 +30,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    box-shadow: 1px 2px 9px 1px grey;
+    box-shadow: 1px 0px 10px 0px grey;
 }
 
 nav li {
@@ -48,12 +53,26 @@ a {
     border: none;
 }
 
-/* MAIN  */
+/* MAIN - SECTION-ONE*/
 
 .container-img {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.container-size-img {
+    margin: 10px;
+}
+
+.container-size-img p {
+    font-size: 13px;
+}
+
+.container-size-img img {
+    width: 100%;
 }
 
 #section-one {
@@ -65,4 +84,60 @@ a {
     margin-bottom: 30px;
 }
 
-.container-size-img {}
+/* MAIN - SECTION-TWO*/
+
+#section-two {
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    margin-top: 40px;
+    height: 100px;
+}
+
+footer div {
+    margin: 50px 0px 0px 50px;
+    width: 290px;
+    height: 200px;
+}
+
+footer h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+fieldset input {
+    width: 280px;
+    height: 35px;
+    border: none;
+}
+
+footer button {
+    width: 285px;
+    height: 45px;
+    border: none;
+    background: rgb(102, 179, 216);
+    background: linear-gradient(90deg, rgba(102, 179, 216, 1) 0%, rgba(60, 53, 128, 1) 100%);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#copywrite {
+    padding-top: 120px;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    height: 100px;
+}
