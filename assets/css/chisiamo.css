@@ -91,6 +91,41 @@ a {
     justify-content: center;
 }
 
+table {
+    margin-bottom: 2em;
+}
+
+caption {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+thead tr {
+    background-color: #5e81a2;
+    color: #ffffff;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(1) {
+    background-color: #d2dce7
+}
+
+tbody tr:nth-of-type(3) {
+    background-color: #d2dce7
+}
+
+
+
 /* FOOTER */
 
 footer {
