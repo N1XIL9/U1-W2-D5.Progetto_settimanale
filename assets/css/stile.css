@@ -4,7 +4,6 @@ body {
     height: 100%;
     line-height: 1.8;
     font-family: 'Fira Sans', sans-serif;
-
 }
 
 h1 {
@@ -25,7 +24,6 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid gray;
     padding: 10px;
     box-shadow: #d3d3d3;
 }
@@ -217,8 +215,24 @@ i {
 
 /* MAIN SECTION-FIVE */
 
+#section-five {
+    display: flex;
+    justify-content: center;
+}
 
+#section-five img {
+    margin-top: 30px;
+}
 
+.section-five-right {
+    margin-top: 100px;
+    margin-left: 30px;
+    line-height: 2.5;
+}
+
+#section-five span {
+    font-size: 20px;
+}
 
 /* FOOTER */
 
