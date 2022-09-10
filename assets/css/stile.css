@@ -15,6 +15,7 @@ h2 {
 }
 
 #container {
+    width: 100%;
     height: 100%;
 }
 
@@ -40,6 +41,10 @@ nav li {
     padding: 0px 10px;
 }
 
+.fa-ellipsis {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -60,7 +65,7 @@ a {
     background-image: url(/assets/images/banner.jpg);
     background-position: center;
     background-size: cover;
-    height: 53vh;
+    min-height: 53vh;
     color: white;
 }
 
@@ -85,7 +90,7 @@ a {
 
 .section-one button {
     font-size: 25px;
-    margin-top: 1.5vh;
+    margin-top: 10px;
     border: none;
     background: rgb(108, 193, 226);
     background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
@@ -93,11 +98,15 @@ a {
 
 }
 
-
-/* BUTTON ANIMATION  */
 .get-info-button {
     padding: 15px 20px;
 }
+
+.get-info-button a {
+    color: white;
+}
+
+/* BUTTON ANIMATION  */
 
 .get-info-button span {
     cursor: pointer;
@@ -212,6 +221,10 @@ a {
     border: none;
     background: rgb(108, 193, 226);
     background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+}
+
+.write-us-button a {
+    background-color: none;
     color: white;
 }
 
@@ -337,6 +350,7 @@ tbody tr:nth-of-type(3) {
 }
 
 #contatti p {
+    text-align: center;
     font-weight: 200;
 }
 
@@ -350,12 +364,12 @@ tbody tr:nth-of-type(3) {
     justify-content: space-around;
 }
 
-#contatti .flex-container-sx:nth-of-type(1) {
-    margin-left: 170px;
+.container-form {
+    width: 45%;
 }
 
-#contatti .flex-container-dx {
-    margin-right: 200px;
+.flex-container-dx {
+    width: 45%;
 }
 
 .name::placeholder {
@@ -367,16 +381,22 @@ tbody tr:nth-of-type(3) {
     margin-bottom: 20px;
 }
 
+
+
 #contatti input {
-    width: 462px;
+    width: 98%;
     height: 30px;
     margin-bottom: 15px;
 }
 
+#contatti textarea {
+    width: 98%;
+    height: 60px;
+}
+
 #contatti .flex-container-sx button {
-    margin-left: 150px;
     margin-top: 10px;
-    width: 180px;
+    width: 35%;
     padding: 12px 5px;
     font-size: 18px;
     color: white;
@@ -385,6 +405,9 @@ tbody tr:nth-of-type(3) {
     border: none;
 }
 
+#contatti form {
+    text-align: center;
+}
 
 
 /* FOOTER */
@@ -394,7 +417,6 @@ footer {
     justify-content: center;
     background-color: rgb(238, 238, 238);
     margin-top: 40px;
-    height: 100px;
 }
 
 footer div {
@@ -415,14 +437,14 @@ footer p {
 }
 
 fieldset input {
-    width: 280px;
+    width: 98%;
     height: 35px;
     border: none;
 }
 
 footer button {
-    width: 285px;
-    height: 45px;
+    width: 99.5%;
+    height: 25%;
     border: none;
     background: rgb(108, 193, 226);
     background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
@@ -440,3 +462,20 @@ footer button {
 }
 
 /* RESPONSIVE */
+
+@media only screen and (max-width: 1200px) {
+    .section-five {
+        display: flex;
+        justify-content: center;
+        flex-direction: wrap;
+        align-items: center;
+    }
+
+    .section-one h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {}
+}
