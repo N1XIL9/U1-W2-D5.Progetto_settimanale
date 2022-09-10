@@ -30,7 +30,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    box-shadow: #d3d3d3;
+    box-shadow: 1px 1px 12px 1px gray
 }
 
 nav li {
@@ -45,11 +45,12 @@ a {
     color: black;
 }
 
+
 .sign-up-button {
     padding: 10px 15px;
     color: white;
-    background: rgb(102, 179, 216);
-    background: linear-gradient(90deg, rgba(102, 179, 216, 1) 0%, rgba(60, 53, 128, 1) 100%);
+    background: rgb(108, 193, 226);
+    background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
     border: none;
 }
 
@@ -86,8 +87,8 @@ a {
     font-size: 25px;
     margin-top: 1.5vh;
     border: none;
-    background: rgb(102, 179, 216);
-    background: linear-gradient(90deg, rgba(102, 179, 216, 1) 0%, rgba(60, 53, 128, 1) 100%);
+    background: rgb(108, 193, 226);
+    background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
     color: white;
 
 }
@@ -209,8 +210,8 @@ a {
     font-size: 20px;
     padding: 10px 25px;
     border: none;
-    background: rgb(102, 179, 216);
-    background: linear-gradient(90deg, rgba(102, 179, 216, 1) 0%, rgba(60, 53, 128, 1) 100%);
+    background: rgb(108, 193, 226);
+    background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
     color: white;
 }
 
@@ -241,7 +242,7 @@ a {
 }
 
 /* MAIN - CHI SIAMO */
-#chi-siamo .section-one {
+#chi-siamo {
     margin: 0 auto;
     text-align: center;
     line-height: 2;
@@ -271,6 +272,9 @@ a {
     height: 80%;
 }
 
+#chi-siamo h1 {
+    font-size: 40px;
+}
 
 /* MAIN - CHI SIAMO SECTION-TWO*/
 
@@ -315,6 +319,72 @@ tbody tr:nth-of-type(3) {
 
 /* MAIN CONTATTI */
 
+#contatti {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 2;
+}
+
+#contatti h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#contatti h2 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#contatti p {
+    font-weight: 200;
+}
+
+#contatti address {
+    text-align: center;
+    font-weight: 300;
+}
+
+#contatti .flex-container-sx {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contatti .flex-container-sx:nth-of-type(1) {
+    margin-left: 170px;
+}
+
+#contatti .flex-container-dx {
+    margin-right: 200px;
+}
+
+.name::placeholder {
+    font-style: italic;
+    padding: 10px;
+}
+
+#contatti .flex-container-dx .mail {
+    margin-bottom: 20px;
+}
+
+#contatti input {
+    width: 462px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#contatti .flex-container-sx button {
+    margin-left: 150px;
+    margin-top: 10px;
+    width: 180px;
+    padding: 12px 5px;
+    font-size: 18px;
+    color: white;
+    background: rgb(108, 193, 226);
+    background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+    border: none;
+}
+
 
 
 /* FOOTER */
@@ -354,8 +424,8 @@ footer button {
     width: 285px;
     height: 45px;
     border: none;
-    background: rgb(102, 179, 216);
-    background: linear-gradient(90deg, rgba(102, 179, 216, 1) 0%, rgba(60, 53, 128, 1) 100%);
+    background: rgb(108, 193, 226);
+    background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
     color: white;
     cursor: pointer;
     font-size: 20px;
