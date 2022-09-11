@@ -15,7 +15,6 @@ h2 {
 }
 
 #container {
-    width: 100%;
     height: 100%;
 }
 
@@ -41,9 +40,17 @@ nav li {
     padding: 0px 10px;
 }
 
-.fa-ellipsis {
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
     display: none;
 }
+
+#check {
+    display: none;
+}
+
 
 a {
     text-decoration: none;
@@ -62,18 +69,22 @@ a {
 /* MAIN - SECTION-ONE*/
 
 .section-one {
+    display: flex;
     background-image: url(/assets/images/banner.jpg);
     background-position: center;
     background-size: cover;
     min-height: 53vh;
     color: white;
+
 }
 
 .section-one div {
-    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     margin-left: 25%;
-    margin-right: 20%;
-    padding-top: 100px;
+    margin-right: 25%;
 }
 
 .section-one h1 {
@@ -210,8 +221,6 @@ a {
 
 .section-four p {
     font-size: 17px;
-    margin-left: 35%;
-    margin-right: 35%;
     margin-bottom: 20px;
 }
 
@@ -242,6 +251,7 @@ a {
 
 .section-five img {
     margin-top: 30px;
+    width: 100%;
 }
 
 .section-five-right {
@@ -298,7 +308,10 @@ a {
 }
 
 table {
+
     margin-bottom: 2em;
+    border-collapse: collapse;
+
 }
 
 caption {
@@ -421,7 +434,7 @@ footer {
 
 footer div {
     margin: 50px 0px 0px 50px;
-    width: 290px;
+    width: 50%;
     height: 200px;
 }
 
@@ -437,13 +450,13 @@ footer p {
 }
 
 fieldset input {
-    width: 98%;
+    width: 95.5%;
     height: 35px;
     border: none;
 }
 
 footer button {
-    width: 99.5%;
+    width: 97.5%;
     height: 25%;
     border: none;
     background: rgb(108, 193, 226);
@@ -463,19 +476,581 @@ footer button {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 1200px) {
-    .section-five {
-        display: flex;
-        justify-content: center;
-        flex-direction: wrap;
-        align-items: center;
-    }
+@media screen and (max-width: 2560px) {
 
     .section-one h1 {
+        font-size: 80px;
+    }
+
+    .section-one p {
         font-size: 40px;
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    body {}
+@media screen and (max-width: 1440px) {
+
+    .section-one h1 {
+        font-size: 50px;
+        margin-top: 0px;
+    }
+
+    .section-one p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    .section-one h1 {
+        font-size: 40px;
+        margin-top: 0;
+    }
+
+    .section-one p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section-one h1 {
+        font-size: 40px;
+    }
+
+    .section-one p {
+        font-size: 15px;
+    }
+
+    .section-one button {
+        font-size: 20px;
+        margin-top: 10px;
+        border: none;
+        background: rgb(108, 193, 226);
+        background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+        color: white;
+
+    }
+
+    .get-info-button {
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (max-width: 1009px) {
+    .section-one h1 {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 917px) {
+    .section-one h1 {
+        font-size: 34px;
+    }
+
+    .section-one p {
+        font-size: 15px;
+    }
+
+    .section-one button {
+        font-size: 20px;
+        margin-top: 10px;
+        border: none;
+        background: rgb(108, 193, 226);
+        background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+        color: white;
+    }
+
+    .get-info-button {
+        padding: 15px 20px;
+    }
+}
+
+
+@media screen and (max-width: 858px) {
+    .section-one h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-one h1 {
+        font-size: 30px;
+    }
+
+    .section-one p {
+        font-size: 15px;
+    }
+
+    .section-one button {
+        font-size: 20px;
+        margin-top: 10px;
+        border: none;
+        background: rgb(108, 193, 226);
+        background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+        color: white;
+
+    }
+
+    .get-info-button {
+        padding: 15px 20px;
+    }
+}
+
+@media only screen and (max-width: 757px) {
+    .section-one h1 {
+        font-size: 26px;
+    }
+
+    .section-one p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 656px) {
+    .section-one h1 {
+        font-size: 23px;
+    }
+
+    .section-one p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .section-one h1 {
+        font-size: 22px;
+    }
+
+    .section-one p {
+        font-size: 10px;
+    }
+
+    .section-one button {
+        font-size: 13px;
+    }
+
+    .get-info-button {
+        padding: 10px 15px;
+    }
+}
+
+
+@media only screen and (max-width: 530px) {
+    .section-one h1 {
+        font-size: 20px;
+    }
+
+    .section-one p {
+        font-size: 10px;
+    }
+
+    .section-one button {
+        font-size: 13px;
+    }
+
+    .get-info-button {
+        padding: 10px 15px;
+    }
+
+    .section-three {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .section-four div {
+        padding: 40px;
+    }
+
+    .section-four h2 {
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+
+    .section-four p {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .section-five {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-five p:nth-of-type(1) {
+        margin-bottom: 40px;
+        line-height: 1;
+    }
+
+    .section-five p:nth-of-type(2) {
+        margin-bottom: 40px;
+        line-height: 1;
+    }
+
+    .section-five p:nth-of-type(3) {
+        line-height: 1;
+    }
+
+    .section-five-right {
+        margin-top: 0;
+        margin-left: 30px;
+        line-height: 2.5;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(238, 238, 238);
+        margin-top: 40px;
+        flex-direction: column;
+
+    }
+
+    footer div {
+        margin: -77px 60px;
+        width: 50%;
+        height: 200px;
+        margin-top: 33px;
+    }
+
+    footer div:nth-of-type(3) {
+        display: flex;
+
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        box-shadow: 1px 1px 12px 1px grey;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        background-color: white;
+        line-height: 2.5;
+        transition: all .5s
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .fa-ellipsis {
+        display: inline-block;
+    }
+
+    .sign-up-button {
+        background: white;
+        border: none;
+        color: black;
+    }
+
+    footer div:nth-of-type(3) {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        box-shadow: 1px 1px 12px 1px grey;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        background-color: white;
+        line-height: 2.5;
+        transition: all .5s
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .fa-ellipsis {
+        display: inline-block;
+    }
+
+    .sign-up-button {
+        color: rgb(0, 0, 0);
+        border: none;
+    }
+
+    .sign-up-button {
+        background: white;
+        border: none;
+    }
+
+    .section-one div {
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .section-one h1 {
+        font-size: 45px;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+
+    .section-one p {
+        font-size: 13px;
+    }
+
+    .section-one button {
+        font-size: 15px;
+        margin-top: 10px;
+        border: none;
+        background: rgb(108, 193, 226);
+        background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+        color: white;
+    }
+
+
+    .section-three {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .section-four div {
+        padding: 40px;
+    }
+
+    .section-four h2 {
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+
+    .section-four p {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .section-five {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-five p:nth-of-type(1) {
+        margin-bottom: 40px;
+        line-height: 1;
+    }
+
+    .section-five p:nth-of-type(2) {
+        margin-bottom: 40px;
+        line-height: 1;
+    }
+
+    .section-five p:nth-of-type(3) {
+        line-height: 1;
+    }
+
+    .section-five-right {
+        margin-top: 0;
+        margin-left: 30px;
+        line-height: 2.5;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(238, 238, 238);
+        margin-top: 40px;
+        flex-direction: column;
+        line-height: 1;
+
+    }
+
+    footer div {
+        margin: -77px 60px;
+        width: 50%;
+        height: 200px;
+        margin-top: 33px;
+    }
+
+    footer div:nth-of-type(3) {
+        display: flex;
+
+    }
+
+}
+
+/* RESPONSIVE CONTATTI  */
+
+@media only screen and (max-width: 510px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        box-shadow: 1px 1px 12px 1px grey;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        background-color: white;
+        line-height: 2.5;
+        transition: all .5s
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .fa-ellipsis {
+        display: inline-block;
+    }
+
+    .sign-up-button {
+        color: rgb(0, 0, 0);
+        border: none;
+    }
+
+    .sign-up-button {
+        background: white;
+        border: none;
+    }
+
+    #contatti .flex-container-sx {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-form {
+        width: 70%;
+    }
+
+    #contatti .flex-container-sx button {
+        margin-top: 10px;
+        width: 70%;
+        padding: 12px 5px;
+        font-size: 18px;
+        color: white;
+        background: rgb(108, 193, 226);
+        background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+        border: none;
+    }
+
+    .flex-container-dx {
+        margin-top: 20px;
+    }
+}
+
+/* RESPONSIVE CHI SIAMO */
+
+@media screen and (max-width: 1200px) {
+    .section-chisiamo {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #chi-siamo {
+        margin: 0 auto;
+        text-align: center;
+        line-height: 2;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 107px;
+    }
+
+    #chi-siamo .container-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section-chisiamo {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    #chi-siamo .container-img {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section-chisiamo table {
+        margin-bottom: 2em;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
