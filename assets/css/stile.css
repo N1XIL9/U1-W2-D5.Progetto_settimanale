@@ -40,16 +40,6 @@ nav li {
     padding: 0px 10px;
 }
 
-.checkbtn {
-    font-size: 30px;
-    float: right;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
 
 
 a {
@@ -70,7 +60,7 @@ a {
 
 .section-one {
     display: flex;
-    background-image: url(/assets/images/banner.jpg);
+    background-image: url(/U1-W2-D5.Progetto_settimanale/assets/images/banner.jpg);
     background-position: center;
     background-size: cover;
     min-height: 53vh;
@@ -472,6 +462,17 @@ footer button {
     background-color: rgb(238, 238, 238);
     height: 100px;
 
+}
+
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
 }
 
 /* RESPONSIVE */
