@@ -60,7 +60,7 @@ a {
 
 .section-one {
     display: flex;
-    background-image: url(/U1-W2-D5.Progetto_settimanale/assets/images/banner.jpg);
+    background-image: url('/assets/images/banner.jpg');
     background-position: center;
     background-size: cover;
     min-height: 53vh;
@@ -935,13 +935,17 @@ footer button {
     ul {
         position: absolute;
         width: 100%;
-        height: 30%;
+        height: 25%;
         top: 70px;
         left: -100%;
         text-align: center;
         background-color: white;
-        line-height: 2.5;
+        line-height: 2.7;
         transition: all .5s
+    }
+
+    ul li:hover {
+        background-color: #ff7f79;
     }
 
     nav ul li {
@@ -967,6 +971,11 @@ footer button {
 
     .sign-up-button {
         background: white;
+        border: none;
+    }
+
+    .sign-up-button:hover {
+        background: #ff7f79;
         border: none;
     }
 
