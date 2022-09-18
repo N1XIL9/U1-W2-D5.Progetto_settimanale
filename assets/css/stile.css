@@ -618,16 +618,28 @@ footer button {
 }
 
 @media only screen and (max-width: 580px) {
+    .section-one div {
+        display: flex;
+        margin-left: 10px;
+    }
+
     .section-one h1 {
-        font-size: 22px;
+        font-size: 45px;
+        line-height: 1;
+        margin-bottom: 5px;
     }
 
     .section-one p {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .section-one button {
-        font-size: 13px;
+        font-size: 15px;
+        margin-top: 10px;
+        border: none;
+        background: rgb(108, 193, 226);
+        background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+        color: white;
     }
 
     .get-info-button {
@@ -637,16 +649,28 @@ footer button {
 
 
 @media only screen and (max-width: 530px) {
+    .section-one div {
+        display: flex;
+        margin-left: 10px;
+    }
+
     .section-one h1 {
-        font-size: 20px;
+        font-size: 45px;
+        line-height: 1;
+        margin-bottom: 5px;
     }
 
     .section-one p {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .section-one button {
-        font-size: 13px;
+        font-size: 15px;
+        margin-top: 10px;
+        border: none;
+        background: rgb(108, 193, 226);
+        background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+        color: white;
     }
 
     .get-info-button {
@@ -970,14 +994,11 @@ footer button {
     }
 
     .sign-up-button {
-        background: white;
+        background: none;
         border: none;
     }
 
-    .sign-up-button:hover {
-        background: #ff7f79;
-        border: none;
-    }
+
 
     #contatti .flex-container-sx {
         display: flex;
@@ -1054,6 +1075,7 @@ footer button {
         justify-content: center;
         flex-direction: column;
         margin-top: 40px;
+
         margin-left: 0;
         margin-right: 0;
     }
